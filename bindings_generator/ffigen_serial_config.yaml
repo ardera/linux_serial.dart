@@ -1,0 +1,39 @@
+name: 'Serial'
+output: '../lib/src/bindings/serial_bindings.g.dart'
+preamble: |
+  part of bindings;
+  // ignore_for_file: non_constant_identifier_names, camel_case_types, unnecessary_brace_in_string_interps, unused_element
+array-workaround: true
+headers:
+  entry-points:
+    - '/usr/include/termios.h'
+    - '/usr/include/unistd.h'
+  include-directives:
+    - '**termios**.h'
+    - '**unistd**.h'
+macros:
+  include:
+    - 'BRKINT'
+    - 'I[A-Z]*'
+    - 'O[A-Z]*'
+    - '[A-Z]*DLY'
+    - 'C[A-Z0-9]*'
+    - 'PAR[A-Z]*'
+    - 'HUPCL'
+    - 'LOBLK'
+    - 'XCASE'
+    - 'ECHO[A-Z]*'
+    - 'FLUSHO'
+    - 'NOFLSH'
+    - 'TOSTOP'
+    - 'PENDIN'
+    - 'V[A-Z0-9]*'
+    - 'TC[A-Z0-9]*'
+    - 'B[0-9]*'
+structs:
+  include:
+    - termios
+functions:
+  include:
+    - 'tc[a-z]*'
+    - 'cf[a-z]*'
