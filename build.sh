@@ -5,6 +5,6 @@ pushd ./bindings_generator
 popd
 
 pushd ./example
-cmd.exe /C flutter build bundle --target=lib/main.dart
-rsync -a ./build/flutter_assets/ hpi4:/home/pi/devel/flutter_serial_assets
+flutter build bundle --target=lib/main.dart
+rsync -a ./build/flutter_assets/ pi@hpi4:/home/pi/devel/flutter_serial_assets
 popd
