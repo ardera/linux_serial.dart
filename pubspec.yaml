@@ -1,4 +1,4 @@
-name: serial
+name: linux_serial
 description: Dart package for accessing serial on Linux.
 version: 0.0.1
 author: Hannes Winkler

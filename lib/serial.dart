@@ -1,1 +1,0 @@
-export 'src/serial.dart' show SerialPorts, SerialPort, SerialPortHandle, Baudrate;

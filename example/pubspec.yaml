@@ -1,5 +1,5 @@
 name: example
-description: Example usage of spidev.
+description: Example usage of linux_serial.
 
 publish_to: 'none'
 
@@ -9,5 +9,5 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  serial:
+  linux_serial:
     path: ../
