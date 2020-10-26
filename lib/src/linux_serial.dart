@@ -431,7 +431,7 @@ class PlatformInterface {
 class SerialPorts {
   static const _pureSerialMajorNrs = <int>{
     19, 22, 24, 32, 46, 48, 54, 57, 71, 75,
-    88, 105, 112, 117, 148, 154, 156, 164,
+    88, 105, 112, 117, 148, 154, 156, 164, 166,
     172, 174, 188, 204, 208, 210, 216, 224, 256
   };
 
@@ -455,6 +455,7 @@ class SerialPorts {
     154: 'Specialix RIO serial card port',
     156: 'Specialix RIO serial card port',
     164: 'Chase Research AT/PCI-Fast serial card port',
+    166: 'ACM USB modem',
     172: 'Moxa Intellio serial card port',
     174: 'SmartIO serial card port',
     188: 'USB serial converter',
